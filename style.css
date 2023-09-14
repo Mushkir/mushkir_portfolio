@@ -127,7 +127,11 @@ main {
 
 .col-2 h1 {
   font-size: 42px;
-  margin: 20px 0 40px;
+  margin: 20px 0;
+}
+
+.col-2 p {
+  margin: 40px 0;
 }
 
 .hero-l-name {
@@ -141,7 +145,7 @@ main {
 }
 
 .hire-me {
-  margin: 50px 0;
+  margin: 10px 0 30px;
 }
 
 .col-2 img {
@@ -153,10 +157,20 @@ main {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
 }
 
+.profession {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.profession span {
+  color: var(--orange-color);
+}
+
 
 /*------------------------------------------- Social Media Links -------------------------------------------*/
 .social-media-link {
-    margin-top: -50px;
+    margin-top: -70px;
     margin-left: -10px;
 }
 
