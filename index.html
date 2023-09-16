@@ -10,84 +10,184 @@
     <!--------------------------------- Font Awesome Library --------------------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-    <!--------------------------------- Poppins Google Font --------------------------------->
+    <!--------------------------------- Nunito Google Font --------------------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600&display=swap"
         rel="stylesheet">
 
     <!--------------------------------- External CSS --------------------------------->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
 
     <div class="container">
-        <!---------------------------------------- Menu Section ---------------------------------------->
+
+        <!------------------- Header Section ------------------->
         <header>
-
-            <div class="nav-menu">
-                <div class="name">
-                    <a href="./index.html" title="Home"><span class="f-name">Mohamed</span> Mushkir</a>
-                </div>
-
-                <nav>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-
-                <a href="./assets/resume/Mushkir Resume.pdf" download class="hero-btn">Download Resume <i class="fa-solid fa-circle-down"></i></a>
-                <!-- <img src="./assets/moon.png" alt="Dark Theme Icon" class="icon"> -->
+            <div class="logo">
+                <a href="./index.html" title="Home">
+                    <h2 class="hero-name-title">Mushkir</h2>
+                </a>
             </div>
 
+            <nav class="nav-links">
+                <ul id="menu-items">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <!-- <li><a href="#">Tech Skills</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+            <div class="btn">
+                <a href="./assets/resume/Mushkir Resume.pdf" download class="hero-btn">Download CV</a>
+            </div>
         </header>
-        <!---------------------------------------- End of the Menu Section ---------------------------------------->
 
+        <section class="hero-detail">
 
-        <!---------------------------------------- Body Section ---------------------------------------->
-        <main>
-            <div class="small-header">
-                <div class="row">
-                    <div class="col-2">
-                        <h1 class="hero-name">I'm Mohamed <span class="hero-l-name">Mushkir</span></h1>
-                        <span class="profession">Passionate <span>Full Stack Developer</span> </span>
-                        <p>
-                            This is my official portfolio site to showcase my all works related to web development and
-                            UI Design
-                        </p>
-                        <br>
-                        <div class="hire-me">
-                            <a href="mailto:mushkirmohamed@gmail.com" target="_blank" class="hero-btn black-color">Hire Me</a>
-                        </div>
+            <div class="hero-img">
+                <img src="./assets/img/mohamedmushkir.jpeg" alt="Mushkir Image">
+            </div>
+            <h1 class="hero-name">Mohamed <span>Mushkir</span></h1>
+            <div class="role">
+                <p class="hero-role">A Passionate <span>Full Stack Developer</span></p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/mohamed-mushkir" title="LinkedIn" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
 
+                <a href="https://github.com/Mushkir" title="GitHub" target="_blank"> <i
+                        class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/mushkir_9611" title="Instagram" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+            </div>
+        </section>
 
-                    </div>
-                    <div class="col-2 background">
-                        <img src="./assets/mushkir.png" alt="Mushkir Image" class="hero-image">
-                    </div>
+    </div>
+    <!------------------- End of Header Section ------------------->
+
+    <!------------------- About Section ------------------->
+    <section class="about" id="about">
+
+        <div class="about-section-image">
+            <img src="./assets/img/mushkir.jpeg" alt="Mushkir Image">
+        </div>
+
+        <div class="division about-me">
+            <span class="discover">Discover</span>
+            <h3>About <span>Me</span></h3>
+            <p>
+                I'm Mushkir, a dedicated full-stack developer based in the picturesque island of Sri Lanka. I am
+                currently engaged as an intern Full Stack Engineer at CyberDude Networks Pvt. Ltd in the vibrant city of
+                Chennai, Tamil Nadu. I firmly believe in my ability to craft exceptional and premium websites.
+            </p>
+            <div class="details">
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="detail email">
+                        Email:
+                    </span>
+                    <a href="mailto:mushkirmohamed@gmail.com">mushkirmohamed@gmail.com</a>
                 </div>
 
-                <!------------------------------------------- Social Media Links ------------------------------------------->
-                <div class="social-media-link">
-                    <ul class="wrapper">
-                        <li class="icon linkedIn">
-                          <span class="tooltip">Linked In</span>
-                         <a href="https://www.linkedin.com/in/mohamed-mushkir" target="_blank"> <span><i class="fa-brands fa-linkedin-in"></i></span></a>
-                        </li>
-                        <li class="icon github">
-                          <span class="tooltip">Github</span>
-                          <a href="https://github.com/Mushkir" target="_blank"><span><i class="fab fa-github"></i></span></a>
-                        </li>
-                      </ul>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="detail phone">
+                        Phone:
+                    </span>
+                    <a href="tel:94777195282">+94777195282</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-address-book"></i>
+                    <span class="detail address">
+                        Address:
+                    </span>
+                    <span class="address-location">Sri Lanka</span>
                 </div>
             </div>
-        </main>
 
-        <footer></footer>
-    </div>
+            <div class="btn-actions">
+                <a href="https://mushkir.github.io/Mushkir_Resume" target="_blank" class="hero-btn explore"> Explore
+                    Resume <i class="fa-solid fa-eye"></i></a>
+
+                <a href="./assets/resume/Mushkir Resume.pdf" download class="hero-btn">Download CV <i
+                        class="fa-solid fa-arrow-down"></i></a>
+            </div>
+        </div>
+
+    </section>
+    <!------------------- End of About Section ------------------->
+
+    <!------------------- Services Section ------------------->
+    <section class="division services" id="services">
+        <p class="discover">What I Do</p>
+        <h3 class="service heading"> My <span>Services</span></h3>
+
+        <div class="row">
+            <div class="col-2">
+                <i class="fa-solid fa-display"></i>
+                <div>
+                    <span>Frontend Development</span>
+                </div>
+                <p>
+                    I have experience working with HTML, CSS3, JavaScript, and Bootstrap.
+                </p>
+                <a href="https://mushkir.github.io/Sample_project" target="_blank"> Tap to see... </a>
+            </div>
+
+            <div class="col-2">
+                <i class="fa-solid fa-code"></i>
+                <div>
+                    <span>Backend Development</span>
+                </div>
+                <p>
+                    Working on PHP, NodeJS Related Projects...
+                </p>
+                <!-- <a href="#">Tap to see...</a> -->
+            </div>
+        </div>
+    </section>
+    <!------------------- End of Services Section ------------------->
+
+    <!------------------- Contact Section ------------------->
+    <section class="division contact" id="contact">
+
+        <h3 class="con heading">Contact <span>Me</span></h3>
+
+        <div class="contact-me">
+            <input type="text" name="name" id="name" placeholder="Name" required>
+            <input type="email" name="email" id="email" placeholder="Email address" required>
+            <input type="text" name="subject" id="subject" placeholder="Subject" required>
+            <textarea name="message" id="message" rows="10" placeholder="Your message" required></textarea>
+            <div class="btn">
+                <a href="#" class="hero-btn contact-btn">Send Message</a>
+            </div>
+        </div>
+
+    </section>
+    <!------------------- End of Contact Section ------------------->
+
+    <!------------------- Footer Section ------------------->
+    <footer>
+        <p>Copyright &copy 2023 - <a href="https://github.com/Mushkir" target="_blank">Mohamed Mushkir</a> - All Rights Reserved</p>
+    </footer>
+
+
+
+    <!------------------- JavaScript (JS) ------------------->
+
+    <!-- Content Effects JS -->
+    <script src="./assets/js/scrollReveal.js"></script>
+
+    <!-- External JS -->
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
