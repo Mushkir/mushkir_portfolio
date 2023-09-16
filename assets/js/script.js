@@ -19,8 +19,8 @@ scroll_reveal.reveal('.hero-img')
 scroll_reveal.reveal('.hero-name',{origin:'top'})
 
 // Section About
-scroll_reveal.reveal('.about-me',{origin:'right'})
-scroll_reveal.reveal('.about-section-image',{origin:'left'})
+scroll_reveal.reveal('.about-me',{origin:'bottom'})
+scroll_reveal.reveal('.about-section-image',{origin:'bottom'})
 
 // Service Section
 scroll_reveal.reveal('.discover',{origin:'bottom'})
