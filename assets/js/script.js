@@ -33,14 +33,11 @@ scroll_reveal.reveal('.contact-me',{origin:'bottom'})
 
 // Toggle Menu JS
 let menu_items = document.getElementById('menu-items')
-menu_items.style.height = '0px'
 
 function showMenu() {
-    if(menu_items.style.height === '0px') {
-        menu_items.style.height = '200px'
-    }
-    else {
-       menu_items.style.height = '0px'
-    }
+    menu_items.style.right = '-110px'
 }
 
+function hideMenu() {
+  menu_items.style.right = '-330px'
+}

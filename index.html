@@ -34,20 +34,24 @@
             </div>
 
             <nav class="nav-links">
+                
                 <ul id="menu-items">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()" title="Close"></i>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="https://github.com/Mushkir/mushkir_portfolio" title="View GitHub Repository"
                             target="_blank">View Source</a></li>
+                    <li><a href="./assets/resume/Mushkir Resume.pdf" download
+                            class="download-resume-mobile-view">Download Resume</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
 
-            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
             <div class="btn">
-                <a href="./assets/resume/Mushkir Resume.pdf" download class="hero-btn">Download CV</a>
+                <a href="./assets/resume/Mushkir Resume.pdf" download class="hero-btn hide-mobile-view">Download CV</a>
             </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()" title="Show Menu"></i>
         </header>
 
         <section class="hero-detail">
@@ -143,7 +147,8 @@
                 <p>
                     I have experience working with HTML, CSS3, JavaScript, and Bootstrap.
                 </p>
-                <a href="https://mushkir.github.io/Sample_project" target="_blank"> Tap to see... </a>
+                <a href="https://mushkir.github.io/Sample_project" target="_blank"> Tap to see &nbsp <i
+                        class="fa-solid fa-arrow-right"></i></a>
             </div>
 
             <div class="col-2">
