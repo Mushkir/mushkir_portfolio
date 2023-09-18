@@ -567,4 +567,9 @@ footer p {
 footer a {
   color: var(--dark-orange);
 } 
+
+footer a:hover {
+  color: #fff;
+  transition: 0.5s;
+}
 /*------------------------------ End of Footer ------------------------------*/
