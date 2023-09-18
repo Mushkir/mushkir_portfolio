@@ -272,6 +272,15 @@ nav ul li a:hover {
   padding: 20px 10px;
 }
 
+.about-me p .cdn-link {
+  color: var(--gray);
+  transition: 0.5s;
+}
+
+.about-me p .cdn-link:hover {
+  color: #fff;
+}
+
 .discover {
   color: var(--dark-orange);
   font-size: 18px;
